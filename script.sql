@@ -20,9 +20,9 @@ foreign key(idLicenciatura) references licenciatura(idLicenciatura)
 on delete restrict on update cascade);
 
 create table calific(
-idCalif varchar(10) primary key,
 Matricula varchar(10),
 idMateria varchar(5),
+calificacion integer,
 foreign key(Matricula) references alumno(Matricula)
 on delete restrict on update cascade,
 foreign key(idMateria) references materia(idMateria)
